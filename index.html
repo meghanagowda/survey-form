@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+      body {
+        font-family: sans-serif;
+        padding-left: 20%;
+        padding-right: 20%;
+        border-radius: 100px;
+      }
+      label {
+         display: flex;
+         align-items: center;
+         font-size: 1.125rem;
+         margin-bottom: 0.5rem;
+        }
+      form {
+        background-color: #9e9295;
+        padding: 40px 40px 40px 40px;
+        border-radius: 5px;
+      }
+
+      .button{
+       display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+       }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="title">Food Survey</h1>
+<p id="description">Tell us about your food preference</p>
+<form id="survey-form">
+    <label id="name-label">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required class="form-control"><br><br>
+    <label id="email-label">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required class="form-control"><br><br>
+    <label id="number-label">Rate your love for Food:</label><br>
+    <input type="number" id="number" name="Rate your love for Food:" min="0" max="10" placeholder="Score"
+           class="form-control"><br><br>
+
+
+    <label id="gender-label">Gender:</label><br>
+    <input type="radio" name="gender" value="male">Male<br>
+    <input type="radio" name="gender" value="female">Female<br>
+    <input type="radio" name="gender" value="other">Other<br><br>
+
+
+    <label id="meal-preferance-label">Are you?</label><br>
+    <input type="radio" name="meal-preferance" value="Vegetarian"> Vegetarian<br>
+    <input type="radio" name="meal-preferance" value="Non-Vegetarian"> Non-Vegetarian<br>
+    <input type="radio" name="meal-preferance" value="Vegan"> Vegan<br>
+    <input type="radio" name="meal-preferance" value="Other"> Other<br><br>
+
+    <label for="dropdown">Choose a cuisine:</label><br>
+    <select id="dropdown" name="cuisine" class="form-control">
+        <option value="" disabled selected hidden>select cuisine</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Indian">Indian</option>
+        <option value="Mediterranean">Mediterranean</option>
+    </select>
+    <br><br>
+
+    <label id="value">Check any that you do NOT eat:</label><br>
+    <input type="checkbox" name="value" value="Chicken">Chicken<br>
+    <input type="checkbox" name="value" value="Seafood">Seafood<br>
+    <input type="checkbox" name="value" value="Nuts">Nuts<br>
+    <input type="checkbox" name="value" value="Sugar">Sugar<br>
+    <input type="checkbox" name="value" value="Dairy">Dairy<br><br>
+
+    <label id="additional-comments-label">Additional Comments:</label><br>
+
+    <textarea placeholder="Additional Comments" class="form-control"></textarea><br><br>
+
+    <input type="submit" id="submit">
+
+</form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
